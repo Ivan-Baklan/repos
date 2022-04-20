@@ -3,6 +3,8 @@
 /* Core variables */
 @import 'base/vars';
 
+
+
 /* CSS Reset */
 @import 'base/reset';
 
@@ -17,10 +19,21 @@
 
 /* Vendor */
 
+/* Global */
+@import 'base/global';
+
+/* Sections */
+@import 'sections/header';
+
 /* Components */
 
 /* Browser specific styles */
 @import 'dirty/hacks';
 
 /* Demo Page styles */
-@import 'demo';
+/*@import 'demo';*/
+
+@import 'main';
+
+
+
