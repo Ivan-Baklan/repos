@@ -45,7 +45,7 @@
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.2px;
-        transition: color 0.3s ease ;
+        transition: color .5s ease ;
 
         &:hover{
             color: $text-color;
@@ -55,6 +55,9 @@
    
 }
  .header-hero{
+        margin-top: 80px;
+        margin-bottom: auto;
+
         &__title{
             font-weight: 800;
             font-size: 58px;
@@ -80,3 +83,74 @@
             max-width: 376px;
         }
     }
+
+ .header{
+        &-bottom{
+            margin-bottom: -20px;
+        
+       
+
+            &__items{
+                display: flex;
+                margin: 0 -15px;
+                flex-wrap: wrap;
+                row-gap: 15px;
+            }
+
+            &__item{
+                flex: 1 0 33.333%;
+                padding: 0 15px;
+                min-width: 280px;
+            }
+        }
+    }
+@media all and (max-width: 800px){
+    .item-header{
+        justify-content: center;
+    }
+
+}
+.item-header{
+    padding: 35px 30px;
+    background-color: $white;
+    box-shadow: 0px 13px 19px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: all .5s ease;
+    cursor: default;
+    &:hover{
+        background-color: $secondary-color-1;
+        .item-header__name,
+        .item-header__descr{
+            color: $white;
+        }
+        .item-header__img svg path{
+            fill: $white;
+        }
+    }
+
+    &__img{
+        margin-bottom: 10px;
+    }
+    &__name{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: $text-color;
+        flex-grow: 1;
+        margin-bottom: 10px;
+        white-space: nowrap;
+        letter-spacing: 0.1px;
+    }
+
+    &__descr{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: $second-text-color;
+
+        letter-spacing: 0.2px;
+    }
+    
+}
