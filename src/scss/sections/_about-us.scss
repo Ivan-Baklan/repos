@@ -1,0 +1,163 @@
+.about-us{
+    padding-bottom: 50px;
+    padding-top: 211px;
+    background-color: $primary-background-color;
+    
+    
+    &__item-header{
+        margin: 0 auto;
+       margin-bottom: 50px;
+    }
+
+    &__text{
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        max-width: 511px;
+    }
+}
+
+
+
+
+.box-list{
+    
+    padding-bottom: 80px;
+
+    &__items{
+        display: flex;
+        margin: 0 -15px;
+        row-gap: 15px;
+        
+    }
+   
+
+    &__item{
+        
+        padding: 0 15px;
+        flex: 1 0 25%;
+    
+    }    
+       
+        
+     
+   
+}
+.item-list{
+    align-items: center;
+    width: 250px;
+    height: 210px;
+    padding: 30px 40px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &__svg svg path{
+        
+        fill: $secondary-color-1;
+    }
+
+    &__counter{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 57px;
+        
+
+        letter-spacing: 0.2px;
+
+       
+
+        
+    }
+
+    &__text{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $second-text-color;
+        text-align: center;
+        white-space: nowrap;   
+        letter-spacing: 0.1px;
+        margin: 10px 0;
+        }
+}
+
+.advice-block{
+    
+    
+    &__header{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      
+    }
+}
+
+.advice-title{
+    
+    padding-bottom: 10px;
+
+    &__text{
+        margin-bottom: 45px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+
+        text-align: center;
+        letter-spacing: 0.2px;
+    }
+}
+
+
+.swiper {
+    height: 342px;
+    max-width: 1049px;
+    margin: 0 auto;
+}
+
+
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    background-color: $white;
+    max-width: 240px;
+}
+
+.item{
+
+    &__tittle{
+        max-width: 130px;
+        padding: 30px 0 0 30px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        
+    }
+
+    &__desc{
+        max-width: 160px;
+        padding: 15px 0 0 30px;
+    }
+
+    &__img{
+    
+        object-fit: cover; 
+       
+    }
+}
+
+@keyframes counter{
+    from{
+        counter-increment: count 0;
+    }
+    to{
+        counter-increment: count(attr(data-value));
+    }
+    
+}

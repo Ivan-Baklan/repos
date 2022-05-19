@@ -1,5 +1,5 @@
 body{
-    font-family: 'Monserrat' ,sans-serif;
+    font-family: Monserrat ,sans-serif;
 }
 p{
     font-size: 14px;
@@ -10,9 +10,43 @@ p{
     color: $second-text-color;
 }
 
+h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;  
+}
 [class$="__container"]{
     margin: 0 auto;
     max-width: 1046px;
+}
+
+[class$="__header"]{
+    margin: 0 auto 40px;
+    max-width: 510px;
+    text-align: center;
+}
+
+[class$="__item-header"]{
+    width: 864px;
+    padding-top: 100px;
+    margin: 0 auto 10px;
+}
+
+.about-title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.2px;  
+}
+.main-title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    
+    letter-spacing: 0.2px;
+    margin-bottom: 20px;
 }
 .container{
     margin: 0 auto;
@@ -30,11 +64,7 @@ p{
 
     }
 }
-[class$="__header"] {
-    margin: 0 auto;
-    max-width: 510px; 
-    text-align: center;
-}
+
 
 .section{
     padding-top: 100px;
